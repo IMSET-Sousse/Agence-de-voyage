@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+.discover-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(91, 82, 214, 0.7); /* Un fond sombre avec transparence */
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.discover-btn:hover {
+    background-color: rgba(75, 36, 165, 0.9);
+    transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+.discover-btn:active {
+    transform: translateY(2px); /* Effet de pression lorsque le bouton est cliqué */
+}
