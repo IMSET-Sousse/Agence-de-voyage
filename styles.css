@@ -57,3 +57,102 @@
     transform: translateX(-50%);
     z-index: 10;
 }
+
+/* Réinitialisation des marges et du padding pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Limite la largeur du carrousel */
+#myCarousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Style des images du carrousel */
+#myCarousel .carousel-item img {
+    object-fit: cover;
+    height: 550px;
+    filter: brightness(0.8); /* Assombrit l'image pour un meilleur contraste avec le texte */
+    transition: filter 0.3s ease; /* Effet doux au survol */
+}
+
+/* Applique un effet de luminosité à l'image au survol pour l'interactivité */
+#myCarousel .carousel-item:hover img {
+    filter: brightness(1); /* Illumine l'image au survol */
+}
+
+/* Légende du carrousel (centrer et donner du contraste) */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre avec transparence */
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Ombre douce pour faire ressortir le texte */
+}
+
+/* Titre du carrousel avec une couleur lumineuse */
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffce00; /* Jaune lumineux pour attirer l'attention */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Ombre portée sur le texte pour le rendre plus visible */
+}
+
+/* Description sous le titre */
+.carousel-caption p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #f1f1f1; /* Blanc cassé pour une meilleure lisibilité */
+    margin-bottom: 15px;
+}
+
+/* Bouton attractif et dynamique */
+.discover-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff5722; /* Orange vif pour attirer l'attention */
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce autour du bouton */
+}
+
+/* Effet au survol du bouton */
+.discover-btn:hover {
+    background-color: #e64a19; /* Orange plus foncé */
+    transform: translateY(-5px); /* Léger effet d'élévation */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
+/* Effet au clic du bouton */
+.discover-btn:active {
+    transform: translateY(2px); /* Effet de pression */
+    box-shadow: none; /* Retirer l'ombre pour simuler l'impact du clic */
+}
+
+/* Animation du carrousel pour une transition fluide */
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Boutons de contrôle du carrousel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #ff5722; /* Boutons de contrôle avec la même couleur orange */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #e64a19; /* Couleur plus foncée au survol des boutons */
+}
