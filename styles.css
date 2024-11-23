@@ -4,6 +4,58 @@ body {
     background-color: #f4f4f4; /* Fond clair pour plus de confort */
 }
 
+
+/* Navbar avec bleu roi et accents dorés */
+.navbar {
+    background-color: #0056b3; /* Bleu roi */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre subtile pour donner du relief */
+}
+
+.navbar-logo {
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: rotate(10deg); /* Légère rotation au survol */
+}
+
+.navbar-brand {
+    color: #ffd700; /* Jaune doré */
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff; /* Passage au blanc au survol */
+}
+
+.navbar-nav .nav-link {
+    color: #f1f1f1; /* Blanc cassé */
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Jaune doré au survol */
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+.navbar .btn-outline-success {
+    border: 2px solid #ffd700; /* Bordure jaune doré */
+    color: #ffd700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #ffd700;
+    color: #fff; /* Texte blanc au survol */
+}
+
+
+
 /* Carrousel */
 #myCarousel {
     max-width: 100%;
