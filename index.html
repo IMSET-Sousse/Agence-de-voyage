@@ -31,9 +31,28 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search" id="searchInput" onkeyup="searchFunction()">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                
+                <script>
+                    function searchFunction() {
+                        var input, filter, items, i, txtValue;
+                        input = document.getElementById('searchInput');
+                        filter = input.value.toUpperCase();
+                        items = document.getElementsByClassName('card-body');
+                        
+                        for (i = 0; i < items.length; i++) {
+                            txtValue = items[i].textContent || items[i].innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                items[i].style.display = "";
+                            } else {
+                                items[i].style.display = "none";
+                            }
+                        }
+                    }
+                </script>
+                
                 <a href="#login" class="btn btn-primary ms-3">Login</a>
             </div>
         </div>
@@ -101,27 +120,36 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        
+        <!-- Carte 1 : Assurance Voyage -->
+        <div class="col-sm-6 mb-4">
+            <div class="card">
+                <img src="./vacation safety.jpg" class="card-img-top" alt="Assurance Voyage" style="object-fit: cover; height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Assurance Voyage Tout Inclus</h5>
+                    <p class="card-text">Protégez vos vacances avec notre assurance complète. Voyagez l'esprit tranquille, nous nous occupons du reste.</p>
+                    <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
 
-    <div class="row mt-5">
-        <div class="col-sm-6 mb-3 mb-sm-0">
+        <!-- Carte 2 : Témoignages -->
+        <div class="col-sm-6 mb-4">
             <div class="card">
+                <img src="./group of friends traveling.jpg" class="card-img-top" alt="Avis client" style="object-fit: cover; height: 250px;">
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Ce que nos clients disent</h5>
+                    <p class="card-text">"Un voyage inoubliable! Tout était parfait, de l'hébergement à l'excursion. Nous avons adoré chaque moment!" - Sophie M.</p>
+                    <a href="#" class="btn btn-primary">Lisez plus d'avis</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+
     </div>
+</div>
+
 
     <!-- Formulaire de Login -->
     <div class="container mt-5">
