@@ -4,55 +4,56 @@
     box-sizing: border-box;
 }
 
-/* Limiter la largeur du carrousel à 80% de la largeur de l'écran */
+/* Limiter la largeur du carrousel à 100% */
 #myCarousel {
     max-width: 100%;
-    margin: 0 auto; /* Centrer le carrousel */
+    margin: 0 auto;
 }
 
 /* Limiter la hauteur des images du carrousel */
 #myCarousel .carousel-item img {
-    object-fit: cover; /* Cela permet de conserver l'aspect des images sans les étirer */
-    height: 550px; /* Limite la hauteur à 550px, ajustez selon vos besoins */
+    object-fit: cover;
+    height: 550px;
 }
 
-/* Positionner le bouton Discover dans l'image du carrousel */
+/* Positionner le bouton Discover initialement */
 .carousel-item .discover-btn {
     position: absolute;
-    top: 50%; /* Centrer verticalement */
-    left: 50%; /* Centrer horizontalement */
-    transform: translate(-50%, -50%); /* Centrer exactement au milieu de l'image */
-    z-index: 2; /* Assurez-vous que le bouton soit au-dessus de l'image */
-    transition: all 0.3s ease; /* Transition douce lors de l'interaction */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: all 0.3s ease;
 }
 
-/* Les styles du bouton */
+/* Style du bouton */
 .discover-btn {
     display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    background-color: rgba(91, 82, 214, 0.7); /* Un fond sombre avec transparence */
+    background-color: rgba(91, 82, 214, 0.7);
     text-decoration: none;
     border-radius: 30px;
     text-transform: uppercase;
 }
 
+/* Effet au survol */
 .discover-btn:hover {
     background-color: rgba(75, 36, 165, 0.9);
-    transform: translateY(-5px); /* Légère élévation au survol */
+    transform: translateY(-5px);
 }
 
 .discover-btn:active {
-    transform: translateY(2px); /* Effet de pression lorsque le bouton est cliqué */
+    transform: translateY(2px);
 }
 
-/* Ajoutez une règle de comportement lors du clic */
-.carousel-item.active .discover-btn {
-    position: fixed;  /* Le bouton devient fixe après le clic */
-    top: 20px;         /* Positionnez-le au-dessus de l'image */
-    left: 50%;         /* Gardez-le centré horizontalement */
-    transform: translateX(-50%); /* Centre exactement au milieu */
-    z-index: 10;       /* S'assurer qu'il reste au-dessus */
+/* Classe qui rend le bouton fixe après le clic */
+.fixed-btn {
+    position: fixed;
+    top: 20px; /* Ajustez cette valeur pour la position du bouton après le clic */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
