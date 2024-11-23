@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Voyage</title>   
+    <title>Voyage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <!-- Utilisation de classes Bootstrap pour la taille du logo -->
             <img src="./1.png" class="navbar-logo" style="max-width: 100px;" alt="Logo de Voyage" width="5%">
             <a class="navbar-brand" href="#">Discover the World</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,19 +38,19 @@
             <div class="carousel-item active">
                 <img src="./4.jpg" class="d-block w-100" alt="Image 1 de voyage">
                 <div class="container mt-5 text-center">
-                    <a href="#explore" class="btn btn-primary discover-btn">Discover</a>
+                    <a href="#explore" class="btn btn-primary discover-btn" onclick="makeButtonFixed(this)">Discover</a>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./5.jpg" class="d-block w-100" alt="Image 2 de voyage">
                 <div class="container mt-5 text-center">
-                    <a href="#explore" class="btn btn-primary discover-btn">Discover</a>
+                    <a href="#explore" class="btn btn-primary discover-btn" onclick="makeButtonFixed(this)">Discover</a>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./6.jpg" class="d-block w-100" alt="Image 3 de voyage">
                 <div class="container mt-5 text-center">
-                    <a href="#explore" class="btn btn-primary discover-btn">Discover</a>
+                    <a href="#explore" class="btn btn-primary discover-btn" onclick="makeButtonFixed(this)">Discover</a>
                 </div>
             </div>
         </div>
@@ -86,7 +85,14 @@
         </div>
     </div>
     
-    <!-- Ajout du script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript pour rendre le bouton fixe après le clic -->
+    <script>
+        function makeButtonFixed(button) {
+            // Appliquer une classe CSS qui rend le bouton fixe après le clic
+            button.classList.add('fixed-btn');
+        }
+    </script>
 </body>
 </html>
