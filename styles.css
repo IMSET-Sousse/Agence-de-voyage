@@ -3,6 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Limiter la largeur du carrousel à 80% de la largeur de l'écran */
+#myCarousel {
+    max-width: 100%;
+    margin: 0 auto; /* Centrer le carrousel */
+}
+
+/* Limiter la hauteur des images du carrousel */
+#myCarousel .carousel-item img {
+    object-fit: cover; /* Cela permet de conserver l'aspect des images sans les étirer */
+    height: 550px; /* Limite la hauteur à 400px, ajustez selon vos besoins */
+}
+
+.carousel-item .discover-btn {
+    position: fixed;
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Centrer exactement au milieu de l'image */
+    z-index: 2; /* Assurez-vous que le bouton soit au-dessus de l'image */
+}
+
 
 .container {
     text-align: center;
