@@ -1,0 +1,126 @@
+header {
+    background-color: #0d3764; /* Couleur mise à jour */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.custom-card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+form input, form textarea {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: #1a4f88;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #dac61a;
+    cursor: pointer;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+ul li i {
+    color: #194e86;
+    margin-right: 10px;
+}
+
+ul li i {
+    transition: color 0.3s ease;
+}
+
+ul li:hover i {
+    color: #0f447c;
+}
+
+/* Boutons de réseaux sociaux */
+.btn-outline-primary {
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    transform: scale(1.1);
+    background-color: #0d3764;
+    color: white;
+}
+
+/* Pied de page */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #555;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccaa12;
+}
+
+.navbar-toggler {
+    border: none;
+}
