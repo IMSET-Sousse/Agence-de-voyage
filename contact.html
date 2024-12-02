@@ -95,43 +95,46 @@
         }
     </style>
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./1.png" width="7%" alt="Logo">
-                <span class="ms-2">Discover the World</span>
-            </a>
-            
-            <!-- Toggler pour mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Liens de navigation -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./destinations.html">Destinations</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img src="./1.png" class="navbar-logo" alt="Logo de Voyage" width="5%">
+        <a class="navbar-brand" href="#">Discover the World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Destination.html">Nos Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./A propos.html">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Reservation.html">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search" id="searchInput" onkeyup="searchFunction()">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a href="./login.html" class="btn btn-primary ms-3">Login</a>
         </div>
-    </nav>
-    <br>
-    <br>
-    <br>
+    </div>
+</nav>
+<br>
+<br>
+<br>
     <header class="bg-primary text-white text-center py-5">
         <h1>Contactez-nous</h1>
         <p>Nous sommes là pour répondre à toutes vos questions et vous aider à planifier votre prochain voyage.</p>
