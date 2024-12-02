@@ -8,91 +8,103 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <style>
-        /* Navbar */
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.7) !important; /* Fond sombre pour la navbar */
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 10px 20px;
-        }
+       /* Navbar */
 
-        .navbar-logo {
-            width: 50px;
-        }
+      /* Style pour le header */
+      header {
+        background: linear-gradient(to right, #0a2847, #3128a7); 
+        background-size: cover;
+        color: rgb(247, 245, 255);
+        text-align: center;
+        padding: 80px 20px;
+      }
 
-        .navbar-nav .nav-link {
-            color: #fff !important;
-            font-size: 1.1rem;
-        }
+      header h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
 
-        .navbar-nav .nav-link:hover {
-            color: #2b75c5 !important;
-        }
+      header p {
+        font-size: 1.25rem;
+        margin-top: 10px;
+      }
 
-        .navbar-nav .nav-item.active .nav-link {
-            color: #007bff !important;
-        }
+      /* Section des destinations */
+      .destination-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
 
-        /* Header */
-        header.bg-primary {
-            background-color: #2e0a70 !important; /* Bleu spécifique */
-            padding: 80px 0; /* Pour ne pas masquer le contenu avec la navbar fixe */
-        }
+      .destination-card:hover {
+        transform: scale(1.05);
+      }
 
-        header h1 {
-            font-size: 2.5rem;
+      .destination-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .destination-card .card-body {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 0 0 15px 15px;
+        transition: background-color 0.3s ease;
+      }
+
+      .destination-card:hover .card-body {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .destination-card .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      .destination-card .card-text {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .destination-card img {
+          height: 200px;
+        }
+        header {
+            background-color: #007bff; /* Couleur de fond bleue */
+            color: white; /* Couleur du texte en blanc */
+            text-align: center;
+            padding: 80px 20px;
+          }
+        
+          header h1 {
+            font-size: 3rem;
             font-weight: bold;
-        }
-
-        header p {
+          }
+        
+          header p {
             font-size: 1.25rem;
-        }
-
-        /* Card custom styles */
-        .custom-card {
-            border-radius: 15px;
-        }
-
-        .card-body {
-            padding: 2rem;
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        /* Formulaire Contact */
-        .form-label {
-            font-weight: bold;
-        }
-
-        textarea.form-control {
-            resize: none;
-        }
-
-        /* Footer */
-        footer.bg-light {
-            background-color: #f8f9fa !important;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .navbar-nav {
-                text-align: center;
-            }
-
-            .nav-item {
-                margin-bottom: 10px;
-            }
-
-            .custom-card {
-                margin-top: 20px;
-            }
-        }
+            margin-top: 10px;
+      }}
     </style>
 </head>
 <!-- Navbar -->
